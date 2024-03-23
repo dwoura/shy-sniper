@@ -1,0 +1,28 @@
+syntax = "proto3";
+
+package base;
+
+option go_package = "./base";
+
+// 获取钱包余额
+message getBalanceReq{
+  string address = 1;
+}
+message getBalanceResp{
+  string balance = 1;
+}
+// 获取钱包余额
+
+// 创建钱包
+message createReq{
+}
+message createResp{
+  string address = 1;
+  string secret = 2;
+}
+// 创建钱包
+
+service baseService{
+  rpc GetBalance(getBalanceReq) returns(getBalanceResp){};
+  rpc Create(createReq) returns(createResp){};
+}

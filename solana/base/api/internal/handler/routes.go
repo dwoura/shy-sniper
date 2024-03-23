@@ -4,7 +4,7 @@ package handler
 import (
 	"net/http"
 
-	"shy-sniper/shysniperbot/internal/svc"
+	"base/api/internal/svc"
 
 	"github.com/zeromicro/go-zero/rest"
 )
@@ -14,9 +14,15 @@ func RegisterHandlers(server *rest.Server, serverCtx *svc.ServiceContext) {
 		[]rest.Route{
 			{
 				Method:  http.MethodGet,
-				Path:    "/from/:name",
-				Handler: ShysniperbotHandler(serverCtx),
+				Path:    "/base/wallet/balance",
+				Handler: getBalanceHandler(serverCtx),
+			},
+			{
+				Method:  http.MethodPost,
+				Path:    "/base/wallet/create",
+				Handler: createHandler(serverCtx),
 			},
 		},
+		rest.WithPrefix("/v1"),
 	)
 }

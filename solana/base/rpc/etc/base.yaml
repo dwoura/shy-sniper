@@ -1,0 +1,9 @@
+Name: base.rpc
+ListenOn: 0.0.0.0:8080
+DataSource: user=postgres password=postgres dbname=shysniper sslmode=disable
+Table: wallet
+Etcd:
+  Hosts:
+    - 127.0.0.1:2379
+  Key: base.rpc
+Timeout: 1000000

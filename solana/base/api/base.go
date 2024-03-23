@@ -4,15 +4,15 @@ import (
 	"flag"
 	"fmt"
 
-	"shy-sniper/shysniperbot/internal/config"
-	"shy-sniper/shysniperbot/internal/handler"
-	"shy-sniper/shysniperbot/internal/svc"
+	"base/api/internal/config"
+	"base/api/internal/handler"
+	"base/api/internal/svc"
 
 	"github.com/zeromicro/go-zero/core/conf"
 	"github.com/zeromicro/go-zero/rest"
 )
 
-var configFile = flag.String("f", "etc/shysniperbot-api.yaml", "the config file")
+var configFile = flag.String("f", "etc/base-api.yaml", "the config file")
 
 func main() {
 	flag.Parse()
