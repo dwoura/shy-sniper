@@ -5,14 +5,37 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="48a8aee3-bd9d-4f81-99ee-d7a613513c6c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/script/genModel/genModel.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shy-sniper.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/solana/base/api/base.go" beforeDir="false" afterPath="$PROJECT_DIR$/solana/base/api/base.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/solana/base/api/etc/base-api.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/solana/base/api/etc/base-api.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/secondary-market/api/evm.api" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/user/api/user.api" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/user/common/jwt.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/user/common/response.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/user/etc/user.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/primary-market/api/primary-market.api" beforeDir="false" afterPath="$PROJECT_DIR$/app/primary-market/evm/base/api/evm.api" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/solana/base/api/base.api" beforeDir="false" afterPath="$PROJECT_DIR$/app/primary-market/solana/base/api/base.api" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/solana/base/api/base.go" beforeDir="false" afterPath="$PROJECT_DIR$/app/primary-market/solana/base/api/base.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/solana/base/api/etc/base-api.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/app/primary-market/solana/base/api/etc/base-api.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/solana/base/api/internal/config/config.go" beforeDir="false" afterPath="$PROJECT_DIR$/app/primary-market/solana/base/api/internal/config/config.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/solana/base/api/internal/handler/createhandler.go" beforeDir="false" afterPath="$PROJECT_DIR$/app/primary-market/solana/base/api/internal/handler/createhandler.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/solana/base/api/internal/handler/getbalancehandler.go" beforeDir="false" afterPath="$PROJECT_DIR$/app/primary-market/solana/base/api/internal/handler/getbalancehandler.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/solana/base/api/internal/handler/routes.go" beforeDir="false" afterPath="$PROJECT_DIR$/app/primary-market/solana/base/api/internal/handler/routes.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/solana/base/api/internal/logic/createlogic.go" beforeDir="false" afterPath="$PROJECT_DIR$/app/primary-market/solana/base/api/internal/logic/createlogic.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/solana/base/api/internal/logic/getbalancelogic.go" beforeDir="false" afterPath="$PROJECT_DIR$/app/primary-market/solana/base/api/internal/logic/getbalancelogic.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/solana/base/api/internal/svc/servicecontext.go" beforeDir="false" afterPath="$PROJECT_DIR$/app/primary-market/solana/base/api/internal/svc/servicecontext.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/solana/base/api/internal/types/types.go" beforeDir="false" afterPath="$PROJECT_DIR$/app/primary-market/solana/base/api/internal/types/types.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/solana/base/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/app/primary-market/solana/base/go.mod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/solana/base/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/app/primary-market/solana/base/go.sum" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/solana/base/rpc/base.go" beforeDir="false" afterPath="$PROJECT_DIR$/app/primary-market/solana/base/rpc/base.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/solana/base/rpc/base.proto" beforeDir="false" afterPath="$PROJECT_DIR$/app/primary-market/solana/base/rpc/base.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/solana/base/rpc/base/base.pb.go" beforeDir="false" afterPath="$PROJECT_DIR$/app/primary-market/solana/base/rpc/base/base.pb.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/solana/base/rpc/base/base_grpc.pb.go" beforeDir="false" afterPath="$PROJECT_DIR$/app/primary-market/solana/base/rpc/base/base_grpc.pb.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/solana/base/rpc/baseservice/baseservice.go" beforeDir="false" afterPath="$PROJECT_DIR$/app/primary-market/solana/base/rpc/baseservice/baseservice.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/solana/base/rpc/etc/base.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/app/primary-market/solana/base/rpc/etc/base.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/solana/base/rpc/internal/config/config.go" beforeDir="false" afterPath="$PROJECT_DIR$/app/primary-market/solana/base/rpc/internal/config/config.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/solana/base/rpc/internal/logic/createlogic.go" beforeDir="false" afterPath="$PROJECT_DIR$/app/primary-market/solana/base/rpc/internal/logic/createlogic.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/solana/base/rpc/internal/logic/getbalancelogic.go" beforeDir="false" afterPath="$PROJECT_DIR$/app/primary-market/solana/base/rpc/internal/logic/getbalancelogic.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/solana/base/rpc/internal/server/baseserviceserver.go" beforeDir="false" afterPath="$PROJECT_DIR$/app/primary-market/solana/base/rpc/internal/server/baseserviceserver.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/solana/base/rpc/internal/svc/servicecontext.go" beforeDir="false" afterPath="$PROJECT_DIR$/app/primary-market/solana/base/rpc/internal/svc/servicecontext.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,7 +84,7 @@
     "git-widget-placeholder": "dev",
     "go.import.settings.migrated": "true",
     "go.sdk.automatically.set": "true",
-    "last_opened_file_path": "/Users/dwoura/Desktop/Code/项目/doge-arbitrage-system/internal/secondary-market",
+    "last_opened_file_path": "/Users/dwoura/Desktop/Code/项目/doge-arbitrage-system/app/user",
     "node.js.detected.package.eslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
@@ -70,14 +93,16 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/user" />
+      <recent name="$PROJECT_DIR$/app/secondary-market" />
       <recent name="$PROJECT_DIR$/internal/secondary-market" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/primary-market/evm/base" />
+      <recent name="$PROJECT_DIR$/app/primary-market/evm" />
+      <recent name="$PROJECT_DIR$/app/primary-market" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/app/secondary-market/api" />
-      <recent name="$PROJECT_DIR$/app/secondary-market" />
-      <recent name="$PROJECT_DIR$/app/primary-market/api" />
-      <recent name="$PROJECT_DIR$/api" />
     </key>
   </component>
   <component name="SharedIndexes">

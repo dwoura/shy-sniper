@@ -1,21 +1,19 @@
 syntax = "v1"
 
 info (
-	title: // TODO: add title
-	desc: // TODO: add description
+	title: "EVM Service"
+	desc: "Service for managing EVM wallets"
 	author: "dwoura"
-	email: "568722524@qq.com"
+	email: "dwoura123@gmail.com"
 )
 
-type request {
-	// TODO: add members here and delete this comment
+type CreateWalletRequest {
+	required int64 userId;
 }
 
-type response {
-	// TODO: add members here and delete this comment
-}
 
-service primary-market-api {
+
+service evm-api {
 	@handler GetUser // TODO: set handler name and delete this comment
 	get /users/id/:userId(request) returns(response)
 
