@@ -2,7 +2,10 @@ module user
 
 go 1.23.0
 
-require github.com/zeromicro/go-zero v1.7.4
+require (
+	github.com/golang-jwt/jwt/v5 v5.2.1
+	github.com/zeromicro/go-zero v1.7.4
+)
 
 require (
 	github.com/beorn7/perks v1.0.1 // indirect
@@ -12,7 +15,6 @@ require (
 	github.com/go-logr/logr v1.4.2 // indirect
 	github.com/go-logr/stdr v1.2.2 // indirect
 	github.com/golang-jwt/jwt/v4 v4.5.1 // indirect
-	github.com/golang-jwt/jwt/v5 v5.2.1 // indirect
 	github.com/google/uuid v1.6.0 // indirect
 	github.com/grpc-ecosystem/grpc-gateway/v2 v2.20.0 // indirect
 	github.com/klauspost/compress v1.17.9 // indirect

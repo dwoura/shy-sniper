@@ -33,7 +33,7 @@ func GenerateToken(user JwtPayLoad, accessSecret string, expires int64) (string,
 
 	// 使用 HMAC SHA256 签名
 	token := jwt.NewWithClaims(jwt.SigningMethodHS256, claims)
-	return token.SignedString(accessSecret)
+	return token.SignedString([]byte(accessSecret))
 }
 
 // ValidateToken 验证 JWT 是否有效

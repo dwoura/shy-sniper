@@ -1,7 +1,7 @@
 package svc
 
 import (
-	"doge-arbitrage-system/app/user/api/internal/config"
+	"user/api/internal/config"
 )
 
 type ServiceContext struct {

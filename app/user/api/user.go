@@ -4,9 +4,9 @@ import (
 	"flag"
 	"fmt"
 
-	"doge-arbitrage-system/app/user/api/internal/config"
-	"doge-arbitrage-system/app/user/api/internal/handler"
-	"doge-arbitrage-system/app/user/api/internal/svc"
+	"user/api/internal/config"
+	"user/api/internal/handler"
+	"user/api/internal/svc"
 
 	"github.com/zeromicro/go-zero/core/conf"
 	"github.com/zeromicro/go-zero/rest"

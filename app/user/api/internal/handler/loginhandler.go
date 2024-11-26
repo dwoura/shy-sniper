@@ -3,10 +3,10 @@ package handler
 import (
 	"net/http"
 
-	"doge-arbitrage-system/app/user/api/internal/logic"
-	"doge-arbitrage-system/app/user/api/internal/svc"
-	"doge-arbitrage-system/app/user/api/internal/types"
 	"github.com/zeromicro/go-zero/rest/httpx"
+	"user/api/internal/logic"
+	"user/api/internal/svc"
+	"user/api/internal/types"
 )
 
 func loginHandler(svcCtx *svc.ServiceContext) http.HandlerFunc {
