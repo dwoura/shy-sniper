@@ -1,6 +1,0 @@
-Name: user
-Host: 0.0.0.0
-Port: 8888
-Auth:
-  AccessSecret: test1test1  # 随机一个数就可以
-  AccessExpire: 3600 # 过期时间

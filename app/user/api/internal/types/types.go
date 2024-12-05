@@ -3,9 +3,9 @@
 
 package types
 
-type LoginRequest struct {
-	Username string `json:"username"`
-	Password string `json:"password"`
+type LoginSignRequest struct {
+	Message   string `json:"message"` // 其中有 nonce 防止用户重复签名，nonce 由后端发放并且由后端验证
+	Signature string `json:"signature"`
 }
 
 type UserInfoResponse struct {

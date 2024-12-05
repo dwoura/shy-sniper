@@ -4,17 +4,23 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="48a8aee3-bd9d-4f81-99ee-d7a613513c6c" name="Changes" comment="">
+    <list default="true" id="48a8aee3-bd9d-4f81-99ee-d7a613513c6c" name="Changes" comment="feat: update">
+      <change afterPath="$PROJECT_DIR$/app/user/common/gorm.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/user/entity/user.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/user/api/internal/handler/loginhandler.go" beforeDir="false" afterPath="$PROJECT_DIR$/app/user/api/internal/handler/loginhandler.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/user/api/etc/user.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/app/user/api/etc/user.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/user/api/internal/config/config.go" beforeDir="false" afterPath="$PROJECT_DIR$/app/user/api/internal/config/config.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/user/api/internal/handler/loginhandler.go" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/app/user/api/internal/handler/routes.go" beforeDir="false" afterPath="$PROJECT_DIR$/app/user/api/internal/handler/routes.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/user/api/internal/handler/userinfohandler.go" beforeDir="false" afterPath="$PROJECT_DIR$/app/user/api/internal/handler/userinfohandler.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/user/api/internal/logic/loginlogic.go" beforeDir="false" afterPath="$PROJECT_DIR$/app/user/api/internal/logic/loginlogic.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/user/api/internal/logic/loginlogic.go" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/app/user/api/internal/logic/userinfologic.go" beforeDir="false" afterPath="$PROJECT_DIR$/app/user/api/internal/logic/userinfologic.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/user/api/internal/svc/servicecontext.go" beforeDir="false" afterPath="$PROJECT_DIR$/app/user/api/internal/svc/servicecontext.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/user/api/internal/types/types.go" beforeDir="false" afterPath="$PROJECT_DIR$/app/user/api/internal/types/types.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/user/api/user.api" beforeDir="false" afterPath="$PROJECT_DIR$/app/user/api/user(aborted).api" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/user/api/user.go" beforeDir="false" afterPath="$PROJECT_DIR$/app/user/api/user.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/user/common/jwt.go" beforeDir="false" afterPath="$PROJECT_DIR$/app/user/common/jwt.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/user/etc/user.yaml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/app/user/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/app/user/go.mod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/user/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/app/user/go.sum" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,12 +44,16 @@
     &quot;assignee&quot;: &quot;dwoura&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/dwoura/doge-arbitrage-system.git&quot;,
-    &quot;accountId&quot;: &quot;6ae938d5-9f5f-471c-9734-37c1444f3b46&quot;
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/dwoura/shy-sniper.git",
+    "accountId": "b7a57a72-1a16-4523-bcdb-27a40eb5d145"
   }
-}</component>
+}]]></component>
+  <component name="KubernetesApiPersistence"><![CDATA[{}]]></component>
+  <component name="KubernetesApiProvider"><![CDATA[{
+  "isMigrated": true
+}]]></component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 7
 }</component>
@@ -55,6 +65,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "DefaultGoTemplateProperty": "Go File",
+    "Go 构建.go build user/api (1).executor": "Debug",
     "Go 构建.go build user/api.executor": "Debug",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
@@ -78,16 +89,16 @@
       <recent name="$PROJECT_DIR$/internal/secondary-market" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/user/api" />
       <recent name="$PROJECT_DIR$/app/primary-market/evm/base" />
       <recent name="$PROJECT_DIR$/app/primary-market/evm" />
       <recent name="$PROJECT_DIR$/app/primary-market" />
       <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/app/secondary-market/api" />
     </key>
   </component>
   <component name="RunManager">
     <configuration name="go build user/api" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
-      <module name="doge-arbitrage-system" />
+      <module name="shy-sniper" />
       <working_directory value="$PROJECT_DIR$/app/user" />
       <kind value="PACKAGE" />
       <package value="user/api" />
@@ -123,6 +134,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="feat: update" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: update" />
   </component>
   <component name="VgoProject">
     <settings-migrated>true</settings-migrated>

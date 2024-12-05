@@ -4,6 +4,7 @@ import (
 	"context"
 	"encoding/json"
 	"fmt"
+	"user/entity"
 
 	"user/api/internal/svc"
 	"user/api/internal/types"
@@ -26,17 +27,17 @@ func NewUserInfoLogic(ctx context.Context, svcCtx *svc.ServiceContext) *UserInfo
 }
 
 func (l *UserInfoLogic) UserInfo() (resp *types.UserInfoResponse, err error) {
-	// todo: add your logic here and delete this line
 	// 从请求头中获取token,解析出来
-	userId := l.ctx.Value("userId").(json.Number)
-	fmt.Println(userId)
-	fmt.Printf("数据类型:%v,%T\n", userId, userId)
-	username := l.ctx.Value("username").(string)
-	fmt.Println(username)
-	uid, _ := userId.Int64()
+	userAddr := l.ctx.Value("address").(string) // jwt 中间件已经将 payload 解析到 ctx 中
+	fmt.Println(userAddr)
+
 	// 结合 gorm
-	return &types.UserInfoResponse{
-		Id:       uid,
-		Username: username,
-	}, nil
+	var user entity.Users
+	tx := l.svcCtx.DB.Table("users").Where("address = ?", userAddr).First(&user)
+	if tx.Error != nil {
+		return nil, tx.Error
+	}
+	data, _ := json.Marshal(user)
+	_ = json.Unmarshal(data, &resp)
+	return resp, nil
 }
