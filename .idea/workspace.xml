@@ -5,22 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="48a8aee3-bd9d-4f81-99ee-d7a613513c6c" name="Changes" comment="feat: update">
-      <change afterPath="$PROJECT_DIR$/app/user/common/gorm.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/user/entity/user.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/config.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/user/api/etc/user.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/app/user/api/etc/user.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/user/api/internal/config/config.go" beforeDir="false" afterPath="$PROJECT_DIR$/app/user/api/internal/config/config.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/user/api/internal/handler/loginhandler.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/user/api/internal/handler/routes.go" beforeDir="false" afterPath="$PROJECT_DIR$/app/user/api/internal/handler/routes.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/user/api/internal/logic/loginlogic.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/user/api/internal/logic/userinfologic.go" beforeDir="false" afterPath="$PROJECT_DIR$/app/user/api/internal/logic/userinfologic.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/user/api/internal/logic/authloginsignlogic.go" beforeDir="false" afterPath="$PROJECT_DIR$/app/user/api/internal/logic/authloginsignlogic.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/user/api/internal/svc/servicecontext.go" beforeDir="false" afterPath="$PROJECT_DIR$/app/user/api/internal/svc/servicecontext.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/user/api/internal/types/types.go" beforeDir="false" afterPath="$PROJECT_DIR$/app/user/api/internal/types/types.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/user/api/user.api" beforeDir="false" afterPath="$PROJECT_DIR$/app/user/api/user(aborted).api" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/user/api/user.go" beforeDir="false" afterPath="$PROJECT_DIR$/app/user/api/user.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/user/etc/user.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/user/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/app/user/go.mod" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/user/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/app/user/go.sum" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/user/common/gorm.go" beforeDir="false" afterPath="$PROJECT_DIR$/common/gorm.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/user/common/jwt.go" beforeDir="false" afterPath="$PROJECT_DIR$/common/jwt.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/user/common/response.go" beforeDir="false" afterPath="$PROJECT_DIR$/common/response.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,6 +48,9 @@
   <component name="KubernetesApiProvider"><![CDATA[{
   "isMigrated": true
 }]]></component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="QODANA_PROBLEMS_VIEW_TAB" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 7
 }</component>
@@ -75,7 +72,7 @@
     "git-widget-placeholder": "dev",
     "go.import.settings.migrated": "true",
     "go.sdk.automatically.set": "true",
-    "last_opened_file_path": "/Users/dwoura/Desktop/Code/项目/doge-arbitrage-system/app/user",
+    "last_opened_file_path": "/Users/dwoura/Desktop/Code/项目/shy-sniper/app/user",
     "node.js.detected.package.eslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
@@ -89,11 +86,11 @@
       <recent name="$PROJECT_DIR$/internal/secondary-market" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/common" />
+      <recent name="$PROJECT_DIR$/app/market-monitor" />
       <recent name="$PROJECT_DIR$/app/user/api" />
       <recent name="$PROJECT_DIR$/app/primary-market/evm/base" />
       <recent name="$PROJECT_DIR$/app/primary-market/evm" />
-      <recent name="$PROJECT_DIR$/app/primary-market" />
-      <recent name="$PROJECT_DIR$" />
     </key>
   </component>
   <component name="RunManager">

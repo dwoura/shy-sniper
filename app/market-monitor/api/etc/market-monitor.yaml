@@ -1,0 +1,8 @@
+Name: ping
+Host: 127.0.0.1
+Port: 8888
+Log:
+  Encoding: plain
+Auth:
+  AccessSecret: shy-sniper-share  # 共享密钥，用于不同服务之间
+  AccessExpire: 3600 # 过期时间

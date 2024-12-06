@@ -1,11 +1,11 @@
 package logic
 
 import (
+	"common"
 	"context"
 	"errors"
 	"user/api/internal/svc"
 	"user/api/internal/types"
-	"user/common"
 	"user/entity"
 
 	"github.com/ethereum/go-ethereum/crypto"

@@ -1,0 +1,11 @@
+syntax = "v1"
+
+type resp {
+	msg string `json:"msg"`
+}
+
+service market-monitor {
+	@handler ping
+	get /ping returns (resp)
+}
+

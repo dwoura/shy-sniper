@@ -1,10 +1,10 @@
 package svc
 
 import (
+	"common"
 	"github.com/zeromicro/go-zero/core/stores/redis"
 	"gorm.io/gorm"
 	"user/api/internal/config"
-	"user/common"
 )
 
 type ServiceContext struct {
