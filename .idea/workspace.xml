@@ -5,16 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="48a8aee3-bd9d-4f81-99ee-d7a613513c6c" name="Changes" comment="feat: update">
-      <change afterPath="$PROJECT_DIR$/common/config.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/market-monitor/api/internal/task/twitterMonitor.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/user/api/etc/user.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/app/user/api/etc/user.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/user/api/internal/logic/authloginsignlogic.go" beforeDir="false" afterPath="$PROJECT_DIR$/app/user/api/internal/logic/authloginsignlogic.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/user/api/internal/svc/servicecontext.go" beforeDir="false" afterPath="$PROJECT_DIR$/app/user/api/internal/svc/servicecontext.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/user/common/gorm.go" beforeDir="false" afterPath="$PROJECT_DIR$/common/gorm.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/user/common/jwt.go" beforeDir="false" afterPath="$PROJECT_DIR$/common/jwt.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/user/common/response.go" beforeDir="false" afterPath="$PROJECT_DIR$/common/response.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/market-monitor/api/etc/market-monitor.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/market-monitor/api/internal/config/config.go" beforeDir="false" afterPath="$PROJECT_DIR$/app/market-monitor/api/internal/config/config.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/market-monitor/api/internal/handler/pinghandler.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/market-monitor/api/internal/handler/routes.go" beforeDir="false" afterPath="$PROJECT_DIR$/app/market-monitor/api/internal/handler/routes.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/market-monitor/api/internal/logic/pinglogic.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/market-monitor/api/internal/svc/servicecontext.go" beforeDir="false" afterPath="$PROJECT_DIR$/app/market-monitor/api/internal/svc/servicecontext.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/market-monitor/api/internal/types/types.go" beforeDir="false" afterPath="$PROJECT_DIR$/app/market-monitor/api/internal/types/types.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/market-monitor/api/market-monitor.api" beforeDir="false" afterPath="$PROJECT_DIR$/app/market-monitor/api/market-monitor.api" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/market-monitor/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/app/market-monitor/go.mod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/config.yaml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.work.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.work.sum" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,6 +49,9 @@
     "accountId": "b7a57a72-1a16-4523-bcdb-27a40eb5d145"
   }
 }]]></component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$USER_HOME$/go/pkg/mod/github.com/zeromicro/go-zero@v1.7.4/core/conf/config.go" root0="SKIP_INSPECTION" />
+  </component>
   <component name="KubernetesApiPersistence"><![CDATA[{}]]></component>
   <component name="KubernetesApiProvider"><![CDATA[{
   "isMigrated": true
@@ -62,6 +70,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "DefaultGoTemplateProperty": "Go File",
+    "Go 构建.go build market-monitor/api.executor": "Debug",
     "Go 构建.go build user/api (1).executor": "Debug",
     "Go 构建.go build user/api.executor": "Debug",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -72,7 +81,7 @@
     "git-widget-placeholder": "dev",
     "go.import.settings.migrated": "true",
     "go.sdk.automatically.set": "true",
-    "last_opened_file_path": "/Users/dwoura/Desktop/Code/项目/shy-sniper/app/user",
+    "last_opened_file_path": "/Users/dwoura/Desktop/Code/项目/shy-sniper/app/market-monitor/api/internal/task",
     "node.js.detected.package.eslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
@@ -81,6 +90,8 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/market-monitor/api/internal/task" />
+      <recent name="$PROJECT_DIR$/app/market-monitor/python" />
       <recent name="$PROJECT_DIR$/app/user" />
       <recent name="$PROJECT_DIR$/app/secondary-market" />
       <recent name="$PROJECT_DIR$/internal/secondary-market" />
@@ -93,7 +104,16 @@
       <recent name="$PROJECT_DIR$/app/primary-market/evm" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Go 构建.go build market-monitor/api">
+    <configuration name="go build market-monitor/api" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="shy-sniper" />
+      <working_directory value="$PROJECT_DIR$/app/market-monitor" />
+      <kind value="PACKAGE" />
+      <package value="market-monitor/api" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$/app/market-monitor/api/marketmonitor.go" />
+      <method v="2" />
+    </configuration>
     <configuration name="go build user/api" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="shy-sniper" />
       <working_directory value="$PROJECT_DIR$/app/user" />
@@ -105,6 +125,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Go 构建.go build market-monitor/api" />
         <item itemvalue="Go 构建.go build user/api" />
       </list>
     </recent_temporary>
@@ -138,5 +159,21 @@
   </component>
   <component name="VgoProject">
     <settings-migrated>true</settings-migrated>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$USER_HOME$/go/pkg/mod/github.com/n0madic/twitter-scraper@v0.0.0-20231104223941-296710769dd8/auth.go</url>
+          <line>150</line>
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/app/market-monitor/api/internal/task/twitterMonitor.go</url>
+          <line>53</line>
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

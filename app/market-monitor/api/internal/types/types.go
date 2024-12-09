@@ -6,3 +6,7 @@ package types
 type Resp struct {
 	Msg string `json:"msg"`
 }
+
+type SubscribeReq struct {
+	Usernames []string `json:"usernames"`
+}

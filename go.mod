@@ -47,4 +47,5 @@ require (
 	google.golang.org/grpc v1.68.0 // indirect
 	google.golang.org/protobuf v1.35.2 // indirect
 	gopkg.in/yaml.v2 v2.4.0 // indirect
+	github.com/n0madic/twitter-scraper v0.0.0-20231104223941-296710769dd8 // indirect
 )
