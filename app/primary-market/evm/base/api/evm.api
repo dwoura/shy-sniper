@@ -1,0 +1,22 @@
+syntax = "v1"
+
+info (
+	title: "EVM Service"
+	desc: "Service for managing EVM wallets"
+	author: "dwoura"
+	email: "dwoura123@gmail.com"
+)
+
+type CreateWalletRequest {
+	required int64 userId;
+}
+
+
+
+service evm-api {
+	@handler GetUser // TODO: set handler name and delete this comment
+	get /users/id/:userId(request) returns(response)
+
+	@handler CreateUser // TODO: set handler name and delete this comment
+	post /users/create(request)
+}

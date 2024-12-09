@@ -1,0 +1,8 @@
+Name: base-app
+Host: 0.0.0.0
+Port: 8888
+Base:
+  Etcd:
+    Hosts:
+      - localhost:2379
+    Key: base.rpc

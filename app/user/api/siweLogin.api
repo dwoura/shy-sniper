@@ -1,0 +1,42 @@
+syntax = "v1"
+
+info (
+	title:  "USER Service"
+	desc:   "Service for User"
+	author: "dwoura"
+	email:  "dwoura123@gmail.com"
+)
+
+type LoginSignRequest {
+	Message   string `json:"message"` // 其中有 nonce 防止用户重复签名，nonce 由后端发放并且由后端验证
+	signature string `json:"signature"`
+}
+
+type UserInfoResponse {
+	Id       int64  `json:"id"`
+	Username string `json:"username"`
+	Address  string `json:"address"`
+	Email    string `json:"email"`
+	Tier     string `json:"tier"`
+}
+
+@server (
+	prefix: /api/v1/user
+)
+service user {
+	@handler nonce
+	get /getNonce returns (string)
+
+	@handler authLoginSign
+	post /authLoginSign (LoginSignRequest) returns (string) // 返回一个 token
+}
+
+@server (
+	prefix: /api/v1/user
+	jwt:    Auth
+)
+service user {
+	@handler userInfo
+	get /getUserInfo returns (UserInfoResponse)
+}
+

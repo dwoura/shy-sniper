@@ -1,0 +1,29 @@
+syntax = "v1"
+
+type (
+	getBalanceReq {
+		address string `json:"address"`
+	}
+	getBalanceResp {
+		balance string `json:"balance"`
+	}
+)
+
+type (
+	createResp {
+		address   string `json:"address"`
+		secretKey string `json:"secretKey"`
+	}
+)
+
+@server (
+	prefix: /v1
+)
+service base-api {
+	@handler getBalance
+	get /base/wallet/balance (getBalanceReq) returns (getBalanceResp)
+
+	@handler create
+	post /base/wallet/create returns (getBalanceResp)
+}
+

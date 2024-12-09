@@ -1,0 +1,22 @@
+syntax = "v1"
+
+type resp {
+	msg string `json:"msg"`
+}
+
+type subscribeReq {
+	usernames []string `json:"usernames"`
+}
+
+@server (
+	prefix: /api/v1/monitor
+	jwt:    Auth
+)
+service marketMonitor {
+	@handler SubscribeTwitterAccount
+	post /subscribeTwitterAccount (subscribeReq) returns (resp)
+
+	@handler SubscribeBinanceAccount
+	post /subscribeBinanceAccount (subscribeReq) returns (resp)
+}
+

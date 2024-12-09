@@ -1,0 +1,16 @@
+Name: user
+Host: 0.0.0.0
+Port: 9999
+DataSource: "host=localhost user=postgres password=a123456789 dbname=postgres port=15432 sslmode=disable TimeZone=Asia/Shanghai"
+Redis:
+  Host: "127.0.0.1:16379"  # Redis 服务地址
+  Pass: ""                # Redis 密码（如果没有可以为空）
+  Type: "node"            # Redis 类型（单节点 "node" 或集群 "cluster"）
+Auth:
+  AccessSecret: shy-sniper-share  # 共享密钥，用于不同服务之间
+  AccessExpire: 3600 # 过期时间
+RestConf:
+  Cors:
+    allowedOrigins: ["http://localhost:5173"]
+    allowedHeaders: ["Content-Type", "Authorization"]
+    allowedMethods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"]

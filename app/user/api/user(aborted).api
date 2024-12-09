@@ -1,0 +1,40 @@
+syntax = "v1"
+
+info (
+	title:  "USER Service"
+	desc:   "Service for User"
+	author: "dwoura"
+	email:  "dwoura123@gmail.com"
+)
+
+type LoginRequest {
+	Username string `json:"username"`
+	Password string `json:"password"`
+}
+
+type UserInfoResponse {
+	Id       int64  `json:"id"`
+	Username string `json:"username"`
+	Address  string `json:"address"`
+	Email    string `json:"email"`
+	Tier     string `json:"tier"`
+}
+
+//前缀，登录不需要 jwt 验证
+@server (
+	prefix: /api/user
+)
+service user {
+	@handler login
+	post /login (LoginRequest) returns (string)
+}
+
+@server (
+	prefix: /api/user
+	jwt:    Auth
+)
+service user {
+	@handler userInfo
+	get /userInfo returns (UserInfoResponse)
+}
+
