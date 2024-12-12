@@ -5,20 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="48a8aee3-bd9d-4f81-99ee-d7a613513c6c" name="Changes" comment="feat: update">
-      <change afterPath="$PROJECT_DIR$/app/market-monitor/api/internal/task/twitterMonitor.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/market-monitor/api/internal/task/binanceMonitor.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/market-monitor/api/etc/market-monitor.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/market-monitor/api/internal/config/config.go" beforeDir="false" afterPath="$PROJECT_DIR$/app/market-monitor/api/internal/config/config.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/market-monitor/api/internal/handler/pinghandler.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/market-monitor/api/internal/handler/routes.go" beforeDir="false" afterPath="$PROJECT_DIR$/app/market-monitor/api/internal/handler/routes.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/market-monitor/api/internal/logic/pinglogic.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/market-monitor/api/internal/svc/servicecontext.go" beforeDir="false" afterPath="$PROJECT_DIR$/app/market-monitor/api/internal/svc/servicecontext.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/market-monitor/api/internal/types/types.go" beforeDir="false" afterPath="$PROJECT_DIR$/app/market-monitor/api/internal/types/types.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/market-monitor/api/market-monitor.api" beforeDir="false" afterPath="$PROJECT_DIR$/app/market-monitor/api/market-monitor.api" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/market-monitor/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/app/market-monitor/go.mod" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/config.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/market-monitor/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/app/market-monitor/go.sum" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/go.work.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.work.sum" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -43,19 +34,19 @@
     &quot;assignee&quot;: &quot;dwoura&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/dwoura/shy-sniper.git",
-    "accountId": "b7a57a72-1a16-4523-bcdb-27a40eb5d145"
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/dwoura/shy-sniper.git&quot;,
+    &quot;accountId&quot;: &quot;b7a57a72-1a16-4523-bcdb-27a40eb5d145&quot;
   }
-}]]></component>
+}</component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$USER_HOME$/go/pkg/mod/github.com/zeromicro/go-zero@v1.7.4/core/conf/config.go" root0="SKIP_INSPECTION" />
   </component>
-  <component name="KubernetesApiPersistence"><![CDATA[{}]]></component>
-  <component name="KubernetesApiProvider"><![CDATA[{
-  "isMigrated": true
-}]]></component>
+  <component name="KubernetesApiPersistence">{}</component>
+  <component name="KubernetesApiProvider">{
+  &quot;isMigrated&quot;: true
+}</component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="QODANA_PROBLEMS_VIEW_TAB" />
   </component>
@@ -67,27 +58,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultGoTemplateProperty": "Go File",
-    "Go 构建.go build market-monitor/api.executor": "Debug",
-    "Go 构建.go build user/api (1).executor": "Debug",
-    "Go 构建.go build user/api.executor": "Debug",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "RunOnceActivity.go.formatter.settings.were.checked": "true",
-    "RunOnceActivity.go.migrated.go.modules.settings": "true",
-    "RunOnceActivity.go.modules.go.list.on.any.changes.was.set": "true",
-    "git-widget-placeholder": "dev",
-    "go.import.settings.migrated": "true",
-    "go.sdk.automatically.set": "true",
-    "last_opened_file_path": "/Users/dwoura/Desktop/Code/项目/shy-sniper/app/market-monitor/api/internal/task",
-    "node.js.detected.package.eslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultGoTemplateProperty&quot;: &quot;Go File&quot;,
+    &quot;Go 构建.go build market-monitor/api.executor&quot;: &quot;Debug&quot;,
+    &quot;Go 构建.go build user/api (1).executor&quot;: &quot;Debug&quot;,
+    &quot;Go 构建.go build user/api.executor&quot;: &quot;Debug&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.formatter.settings.were.checked&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.migrated.go.modules.settings&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.modules.go.list.on.any.changes.was.set&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;dev&quot;,
+    &quot;go.import.settings.migrated&quot;: &quot;true&quot;,
+    &quot;go.sdk.automatically.set&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/dwoura/Desktop/Code/项目/shy-sniper/app/market-monitor/api/internal/task&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/app/market-monitor/api/internal/task" />
@@ -167,11 +158,6 @@
           <url>file://$USER_HOME$/go/pkg/mod/github.com/n0madic/twitter-scraper@v0.0.0-20231104223941-296710769dd8/auth.go</url>
           <line>150</line>
           <option name="timeStamp" value="13" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
-          <url>file://$PROJECT_DIR$/app/market-monitor/api/internal/task/twitterMonitor.go</url>
-          <line>53</line>
-          <option name="timeStamp" value="16" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
