@@ -4,13 +4,16 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="48a8aee3-bd9d-4f81-99ee-d7a613513c6c" name="Changes" comment="feat: update">
-      <change afterPath="$PROJECT_DIR$/app/market-monitor/api/internal/task/binanceMonitor.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="48a8aee3-bd9d-4f81-99ee-d7a613513c6c" name="Changes" comment="feat: fix monitor">
+      <change afterPath="$PROJECT_DIR$/app/market-monitor/api/internal/task/notifier.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/market-monitor/api/internal/task/task.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/market-monitor/api/internal/task/wechat.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/market-monitor/api/internal/task/binanceMonitor.go" beforeDir="false" afterPath="$PROJECT_DIR$/app/market-monitor/api/internal/task/binanceMonitor.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/market-monitor/api/marketmonitor.go" beforeDir="false" afterPath="$PROJECT_DIR$/app/market-monitor/api/marketmonitor.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/market-monitor/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/app/market-monitor/go.mod" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/market-monitor/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/app/market-monitor/go.sum" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go.work.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.work.sum" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/secondary-market/api/secondary-market.api" beforeDir="false" afterPath="$PROJECT_DIR$/app/secondary-market/api/secondary-market.api" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -105,6 +108,24 @@
       <filePath value="$PROJECT_DIR$/app/market-monitor/api/marketmonitor.go" />
       <method v="2" />
     </configuration>
+    <configuration name="go build market-monitor/api" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="shy-sniper" />
+      <working_directory value="$PROJECT_DIR$/app/market-monitor" />
+      <kind value="PACKAGE" />
+      <package value="market-monitor/api" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$/app/market-monitor/api/marketmonitor.go" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build user/api" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="shy-sniper" />
+      <working_directory value="$PROJECT_DIR$/app/user" />
+      <kind value="PACKAGE" />
+      <package value="user/api" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$/app/user/api/user.go" />
+      <method v="2" />
+    </configuration>
     <configuration name="go build user/api" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="shy-sniper" />
       <working_directory value="$PROJECT_DIR$/app/user" />
@@ -138,7 +159,13 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="CUSTOM_BOOLEAN_PROPERTIES">
+                <map>
+                  <entry key="Show.Git.Branches" value="false" />
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -146,7 +173,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="feat: update" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: update" />
+    <MESSAGE value="feat: fix monitor" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: fix monitor" />
   </component>
   <component name="VgoProject">
     <settings-migrated>true</settings-migrated>
@@ -158,6 +186,11 @@
           <url>file://$USER_HOME$/go/pkg/mod/github.com/n0madic/twitter-scraper@v0.0.0-20231104223941-296710769dd8/auth.go</url>
           <line>150</line>
           <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/app/market-monitor/api/internal/task/binanceMonitor.go</url>
+          <line>87</line>
+          <option name="timeStamp" value="31" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

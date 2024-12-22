@@ -5,7 +5,7 @@ go 1.23.0
 require (
 	github.com/PuerkitoBio/goquery v1.10.0
 	github.com/chromedp/chromedp v0.11.2
-	github.com/thoas/go-funk v0.9.3
+	github.com/go-resty/resty/v2 v2.16.2
 	github.com/tidwall/gjson v1.18.0
 	github.com/zeromicro/go-zero v1.7.4
 	gorm.io/gorm v1.25.12
@@ -19,6 +19,7 @@ require (
 	github.com/chromedp/cdproto v0.0.0-20241208230723-d1c7de7e5dd2 // indirect
 	github.com/chromedp/sysutil v1.1.0 // indirect
 	github.com/dgryski/go-rendezvous v0.0.0-20200823014737-9f7001d12a5f // indirect
+	github.com/eatmoreapple/openwechat v1.4.8 // indirect
 	github.com/fatih/color v1.18.0 // indirect
 	github.com/go-logr/logr v1.4.2 // indirect
 	github.com/go-logr/stdr v1.2.2 // indirect

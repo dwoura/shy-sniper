@@ -34,8 +34,21 @@ func main() {
 	//monitor.Start()
 
 	// 方程式新闻id 1483495485889564674
-	monitor, _ := task.NewTwitterMonitor("1483495485889564674")
-	monitor.Start()
+	// monitor, _ := task.NewTwitterMonitor("1483495485889564674")
+	// monitor.Start()
+
+	// 初始化通知器
+	notifier, isLoginChan := task.NewNotifier(&task.NotifierConfig{ToGroupName: "星空社区-监控内测"})
+	select {
+	case isLogin := <-isLoginChan:
+		if !isLogin {
+			panic("微信登录失败")
+		}
+	}
+	// 运行 Binance 公告监控
+	task.StartMonitorProcess(notifier, "square", "https://www.binance.com/zh-CN/square/profile/panews", "星空社区播报：\n 来源: PANews \n")
+	//task.StartMonitorProcess("square", "https://www.binance.com/zh-CN/square/profile/binance_announcement")
+	task.StartMonitorProcess(notifier, "square", "https://www.binance.com/zh-CN/square/profile/bwenews", "星空社区播报：\n 来源: 方程式新闻 \n")
 
 	fmt.Printf("Starting server at %s:%d...\n", c.Host, c.Port)
 	server.Start()
