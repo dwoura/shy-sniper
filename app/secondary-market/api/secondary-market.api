@@ -1,8 +1,8 @@
 syntax = "v1"
 
 info (
-	title: // TODO: add title
-	desc: // TODO: add description
+	title: "secondary-market"
+	desc: "secondary-market"
 	author: "dwoura"
 	email: "568722524@qq.com"
 )
@@ -16,9 +16,8 @@ type response {
 }
 
 service secondary-market-api {
-	@handler GetUser // TODO: set handler name and delete this comment
-	get /users/id/:userId(request) returns(response)
+	// 从指定交易所提款
+	@handler Withdraw // 充值
+	post /users/id/:userId(request) returns(response)
 
-	@handler CreateUser // TODO: set handler name and delete this comment
-	post /users/create(request)
 }
